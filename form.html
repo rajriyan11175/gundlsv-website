@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body >
+<!-- partial:index.partial.html -->
+<div id="navbar">
+  <div class="container">
+    <ul>
+      <li><a href="home.html">Home</a></li>	 
+		  <li><a href="index.html">Timeline</a></li>
+		  <li><a href="coronatesting.html">Corona Testing</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="regform">
+	<h1>Information Form</h1></div>
+
+  <div class ="main">
+<form id ="testForm">
+  <div id="name">
+  <h2 class ="name">Name</h2>
+  <input id ="firstname" type="text" required name ="first_name"><br>
+  <label id="firstlabel"> first name</label>
+  <input id ="lastname" type="text" required name ="last_name"><br>
+  <label id="lastlabel"> last name</label>
+  </div>
+
+  <h2 class ="name">Profession</h2>
+  <input id ="profession" type="text" name ="profession" placeholder="student/doctor/teacher">
+  
+  <h2 class ="name">Email</h2>
+  <input id ="email" type="text" required name ="email">
+  <h2 class ="name">Date Of Birth</h2>
+  <input id ="dateofbirth" type="date" required name ="dateofbirth">
+  
+  <h2 class ="name">Mobile Number</h2>
+  <input id ="mobile" type="text" name ="mobile" required pattern="[789][0-9]{9}">
+  
+  
+  <h2 class="name"> State</h2>
+  <select id ="state" name ="state">
+    <option disabled="disabled" required selected="selected">--choose</option>
+  <option> state 1</option>
+  <option> delhi</option>
+  <option> punjab</option>
+  <option> state 2</option>
+  <option> state 3</option>
+
+  </select>
+
+<h2 id="travel"> Have you travelled to COVID affected country within last 1 month?</h2>
+<div id="travel">
+  <input type="radio"  name="option" value="Yes"> Yes
+ <input type="radio"  name="option" value="No" checked="checked"> No
+</div>
+
+<h2 id="symptoms">Do you have any of the following symptoms ?</h2>
+<div class="arrange">
+<input type="checkbox" name="symptoms" value="Fever" id="cb1"><label for="cb1">Fever</label><br>
+<input type="checkbox" name="symptoms" value="Dry Cough" id="cb2"><label for="cb2">Dry Cough</label><br>
+<input type="checkbox" name="symptoms" value="Cold" id="cb3"><label for="cb3">Cold</label><br>
+<input type="checkbox" name="symptoms" value="Breathing Issues" id="cb4"><label for="cb3">Breathing Issues</label><br>
+<input type="checkbox" name="symptoms" value="Chest Pain" id="cb5"><label for="cb3">Chest Pain</label><br>
+</div>
+<input id="submit" type="submit">
+
+</p>
+<h2 id="centers"> Testing Centres around you: <span id="result"></span><br>
+</div>
+</form>
+</div>
+<script>
+
+
+</script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+<script  src="form.js"></script>
+
+</body>
+</html>
+  
+
+
+
+
+
+
+
+
+
+
+/*<div class="container"> 
+  <div class="container-fluid">
+     <h1>Gundlav Pra. Shala</h1>
+  </div> 
+
+
+
+
+
+  <div class="cntainer">
+     <p>Principal- Rajeshkumar B. Patel  <br>
+        Contact-7573037127</p>
+  </div>
+</div>
+  
+     
+     
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  
+
+  
+
+   <div class="navbar">
+     <a href="#home">Home</a>
+     <div class="subnav">
+       <button class="subnavbtn">News <i class="fa fa-caret-down"></i></button>
+       <div class="subnav-content">
+         <a href="#company">Company</a>
+         <a href="#team">Team</a>
+         <a href="#careers">Careers</a>
+       </div>
+     </div> 
+     <div class="subnav">
+       <button class="subnavbtn">Administration<i class="fa fa-caret-down"></i></button>
+       <div class="subnav-content">
+         <a href="administration.html">teacher info</a>
+         <a href="#deliver">Deliver</a>
+         <a href="#package">Package</a>
+         <a href="#express">Express</a>
+       </div>
+     </div> 
+     <div class="subnav">
+       <button class="subnavbtn">Student cornor  <i class="fa fa-caret-down"></i></button>
+       <div class="subnav-content">
+         <a href="form.html">form </a>
+         <a href="#link2">Link 2</a>
+         <a href="#link3">Link 3</a>
+         <a href="#link4">Link 4</a>
+       </div>
+     </div>
+     <div class="subnav">
+        <button class="subnavbtn">teacher cornor  <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="https://forms.gle/e3WxGXizbRHhtBpV6">info school X</a>
+          <a href="#link2">Link 2</a>
+          <a href="#link3">Link 3</a>
+          <a href="#link4">Link 4</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn"> Important links <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+           <a href="https://www.facebook.com/gundlav.prashala.9">Facebook</a>
+           <a href="https://gshala.schoolnetindia.com/">G-shala</a>
+          <a href="#link3">Link 3</a>
+          <a href="#link4">Link 4</a>
+        </div>
+      </div>
+     <a href="#contact">Contact</a>
+   </div>
+   
+   
+<br>
+
+
+<br>
+
+
+
+<div class="b"> 
+  <p>               GUNDLAV PRA.SHALA was established in 1955 and it is managed by the Local body. It is located in Rural area.It is located in VALSAD block of VALSAD district of Gujrat. The school consists of Grades
+     from 1 to 8. Gujarati is the medium of  instructions in this school. This school is approachable by  weather road.In this school academic session starts in April.The school has Government building. It has got 13 classrooms
+     for instructional purposes. All the classrooms are in good condition.The source of Drinking Water in the school is Tap Water and it is functional.The school has 2 boys toilet and it is functional. and 5 girls
+     toilet and it is functional.The school has a playground. The school has a library and has 380 books in its library. The school has 7 computers for teaching and learning purposes and all are functional.
+     The school is having a computer aided learning lab. The school is Provided but not Prepared in School Premises providing mid-day meal.
+
+
+     </p>
+</div> 
+
+<video autoplay muted loop id="myVideo">
+  <source src="gundlav primary school cmp.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<br>
+
+
+
+
+*/
+
+<div class="row">
+ <div class="column">
+   <img src="gundlav S.jpeg"  style="width:100%">
+ </div>
+ <div class="column">
+   <img src="gundlav prayer photo.jpeg"  style="width:100%">
+ </div>
+</div>
